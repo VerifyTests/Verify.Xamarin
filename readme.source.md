@@ -1,0 +1,45 @@
+# <img src="/src/icon.png" height="30px"> Verify.Xamarin
+
+[![Build status](https://ci.appveyor.com/api/projects/status/rbkfpdk6o1cc3ih9?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-xamarin)
+[![NuGet Status](https://img.shields.io/nuget/v/Verify.Xamarin.svg)](https://www.nuget.org/packages/Verify.Xamarin/)
+
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Uno UIs](https://platform.uno/).
+
+
+Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
+
+
+<a href='https://dotnetfoundation.org' alt='Part of the .NET Foundation'><img src='https://raw.githubusercontent.com/VerifyTests/Verify/master/docs/dotNetFoundation.svg' height='30px'></a><br>
+Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
+
+toc
+
+
+## NuGet package
+
+https://nuget.org/packages/Verify.Uno/
+
+
+## Usage
+
+
+### Testing
+
+Enable VerifyUno once at assembly load time:
+
+
+## OS specific rendering
+
+The rendering of Form elements can very slightly between different OS versions. This can make verification on different machines (eg CI) problematic. There are several approaches to mitigate this:
+
+ * Using a [custom comparer](https://github.com/VerifyTests/Verify/blob/master/docs/comparer.md)
+
+
+## Security contact information
+
+To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
+
+
+## Icon
+
+[Gem](https://thenounproject.com/term/gem/2247823/) designed by [Adnen Kadri](https://thenounproject.com/adnen.kadri/) from [The Noun Project](https://thenounproject.com/creativepriyanka).
