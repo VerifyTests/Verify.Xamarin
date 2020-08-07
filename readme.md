@@ -79,7 +79,7 @@ Add the following to the main activity:
 <!-- snippet: makeFullscreen -->
 <a id='snippet-makefullscreen'></a>
 ```cs
-protected override void OnCreate(Bundle savedInstanceState)
+protected override void OnCreate(Bundle bundle)
 {
 #if DEBUG
     Window.AddFlags(WindowManagerFlags.Fullscreen);
@@ -136,7 +136,7 @@ public async Task AppUsage()
 <sup><a href='/src/Tests/TheTests.cs#L28-L36' title='File snippet `appusage` was extracted from'>snippet source</a> | <a href='#snippet-appusage' title='Navigate to start of snippet `appusage`'>anchor</a></sup>
 <!-- endsnippet -->
 
-With the state of the control being rendered as a verified files:
+With the state of the control being rendered as:
 
 <!-- snippet: TheTests.AppUsage.info.verified.txt -->
 <a id='snippet-TheTests.AppUsage.info.verified.txt'></a>
@@ -240,7 +240,7 @@ public async Task ControlUsage()
 <sup><a href='/src/Tests/TheTests.cs#L15-L26' title='File snippet `controlusage` was extracted from'>snippet source</a> | <a href='#snippet-controlusage' title='Navigate to start of snippet `controlusage`'>anchor</a></sup>
 <!-- endsnippet -->
 
-With the state of the control being rendered as a verified files:
+With the state of the control being rendered as:
 
 <!-- snippet: TheTests.ControlUsage.info.verified.txt -->
 <a id='snippet-TheTests.ControlUsage.info.verified.txt'></a>

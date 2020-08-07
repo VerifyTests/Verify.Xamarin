@@ -14,15 +14,15 @@ namespace SampleXamarin
     public class MainActivity : AppCompatActivity
     {
         #region makeFullscreen
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
 #if DEBUG
             Window.AddFlags(WindowManagerFlags.Fullscreen);
             Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
 #endif
             #endregion
-            base.OnCreate(savedInstanceState);
-            Platform.Init(this, savedInstanceState);
+            base.OnCreate(bundle);
+            Platform.Init(this, bundle);
             SetContentView(Resource.Layout.activity_main);
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);

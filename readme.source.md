@@ -63,7 +63,7 @@ The current app state can then be verified as follows:
 
 snippet: AppUsage
 
-With the state of the control being rendered as a verified files:
+With the state of the control being rendered as:
 
 snippet: TheTests.AppUsage.info.verified.txt
 
@@ -78,7 +78,7 @@ An element can be verified as follows:
 
 snippet: ControlUsage
 
-With the state of the control being rendered as a verified files:
+With the state of the control being rendered as:
 
 snippet: TheTests.ControlUsage.info.verified.txt
 
