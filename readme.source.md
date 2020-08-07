@@ -62,11 +62,11 @@ snippet: AppUsage
 
 With the state of the element being rendered as a verified files:
 
-/snippet: TheTests.AppUsage.00.verified.html
+snippet: TheTests.AppUsage.info.verified.txt
 
-[TheTests.AppUsage.01.verified.png](/src/Tests/TheTests.AppUsage.01.verified.png):
+[TheTests.AppUsage.verified.png](/src/Tests/TheTests.AppUsage.verified.png):
 
-<img src="/src/Tests/TheTests.AppUsage.01.verified.png" width="400px">
+<img src="/src/Tests/TheTests.AppUsage.verified.png" width="400px">
 
 
 #### Element test
@@ -77,11 +77,11 @@ snippet: ControlUsage
 
 With the state of the element being rendered as a verified files:
 
-/snippet: TheTests.ControlUsage.00.verified.html
+snippet: TheTests.ControlUsage.info.verified.txt
 
-[TheTests.ControlUsage.01.verified.png](/src/Tests/TheTests.ElementControlUsage.01.verified.png):
+[TheTests.ControlUsage.verified.png](/src/Tests/TheTests.ElementControlUsage.verified.png):
 
-<img src="/src/Tests/TheTests.ControlUsage.01.verified.png" width="400px">
+<img src="/src/Tests/TheTests.ControlUsage.verified.png" width="400px">
 
 
 ## OS specific rendering

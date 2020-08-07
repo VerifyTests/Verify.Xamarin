@@ -135,11 +135,87 @@ public async Task AppUsage()
 
 With the state of the element being rendered as a verified files:
 
-/snippet: TheTests.AppUsage.00.verified.html
+<!-- snippet: TheTests.AppUsage.info.verified.txt -->
+<a id='snippet-TheTests.AppUsage.info.verified.txt'></a>
+```txt
+[
+  {
+    Class: 'DecorView',
+    Rect: 'w:1080 h:1920 x:0 y:0'
+  },
+  {
+    Class: 'LinearLayout',
+    Rect: 'w:1080 h:1794 x:0 y:0'
+  },
+  {
+    Class: 'FrameLayout',
+    Rect: 'w:1080 h:1794 x:0 y:0'
+  },
+  {
+    Id: 'action_bar_root',
+    Class: 'FitWindowsLinearLayout',
+    Rect: 'w:1080 h:1794 x:0 y:0'
+  },
+  {
+    Id: 'content',
+    Class: 'ContentFrameLayout',
+    Rect: 'w:1080 h:1794 x:0 y:0'
+  },
+  {
+    Class: 'CoordinatorLayout',
+    Rect: 'w:1080 h:1794 x:0 y:0'
+  },
+  {
+    Class: 'AppBarLayout',
+    Rect: 'w:1080 h:147 x:0 y:0'
+  },
+  {
+    Id: 'toolbar',
+    Class: 'Toolbar',
+    Rect: 'w:1080 h:147 x:0 y:0'
+  },
+  {
+    Text: 'SampleXamarin',
+    Class: 'AppCompatTextView',
+    Rect: 'w:379 h:71 x:42 y:38'
+  },
+  {
+    Class: 'ActionMenuView',
+    Rect: 'w:105 h:147 x:975 y:0'
+  },
+  {
+    Label: 'More options',
+    Class: 'ActionMenuPresenter$OverflowMenuButton',
+    Rect: 'w:105 h:126 x:975 y:10'
+  },
+  {
+    Class: 'RelativeLayout',
+    Rect: 'w:1080 h:1647 x:0 y:147'
+  },
+  {
+    Id: 'theText',
+    Text: 'Hello World!',
+    Class: 'AppCompatTextView',
+    Rect: 'w:200 h:51 x:440 y:945'
+  },
+  {
+    Id: 'fab',
+    Class: 'FloatingActionButton',
+    Rect: 'w:147 h:147 x:891 y:1605'
+  },
+  {
+    Id: 'navigationBarBackground',
+    Class: 'View',
+    Rect: 'w:1080 h:126 x:0 y:1794'
+  }
+]
+```
+<sup><a href='/src/Tests/TheTests.AppUsage.info.verified.txt#L1-L71' title='File snippet `TheTests.AppUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.AppUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.AppUsage.info.verified.txt`'>anchor</a></sup>
+<!-- endsnippet -->
 
-[TheTests.AppUsage.01.verified.png](/src/Tests/TheTests.AppUsage.01.verified.png):
+[TheTests.AppUsage.verified.png](/src/Tests/TheTests.AppUsage.verified.png):
 
-<img src="/src/Tests/TheTests.AppUsage.01.verified.png" width="400px">
+<img src="/src/Tests/TheTests.AppUsage.verified.png" width="400px">
 
 
 #### Element test
@@ -163,11 +239,22 @@ public async Task ControlUsage()
 
 With the state of the element being rendered as a verified files:
 
-/snippet: TheTests.ControlUsage.00.verified.html
+<!-- snippet: TheTests.ControlUsage.info.verified.txt -->
+<a id='snippet-TheTests.ControlUsage.info.verified.txt'></a>
+```txt
+{
+  Id: 'theText',
+  Text: 'Hello World!',
+  Class: 'AppCompatTextView',
+  Rect: 'w:200 h:51 x:440 y:945'
+}
+```
+<sup><a href='/src/Tests/TheTests.ControlUsage.info.verified.txt#L1-L6' title='File snippet `TheTests.ControlUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.ControlUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.ControlUsage.info.verified.txt`'>anchor</a></sup>
+<!-- endsnippet -->
 
-[TheTests.ControlUsage.01.verified.png](/src/Tests/TheTests.ElementControlUsage.01.verified.png):
+[TheTests.ControlUsage.verified.png](/src/Tests/TheTests.ElementControlUsage.verified.png):
 
-<img src="/src/Tests/TheTests.ControlUsage.01.verified.png" width="400px">
+<img src="/src/Tests/TheTests.ControlUsage.verified.png" width="400px">
 
 
 ## OS specific rendering
