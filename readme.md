@@ -12,6 +12,7 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Xamarin UIs](https://dotnet.microsoft.com/apps/xamarin).
 
+Leverages [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/frameworks/uitest/) to capture the state of an app.
 
 Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
 
