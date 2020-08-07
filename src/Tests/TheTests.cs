@@ -60,6 +60,6 @@ public class TheTests
         #endregion
 
         VerifierSettings.UniqueForRuntime();
-        VerifyPhash.RegisterComparer("png", .99f);
+        VerifyPhash.RegisterComparer("png", .9f);
     }
 }

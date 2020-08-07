@@ -4,5 +4,6 @@
     <SelectedDevice>pixel_2_pie_9_0_-_api_28</SelectedDevice>
     <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

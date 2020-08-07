@@ -1,0 +1,171 @@
+[
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 1920.0,
+      CenterX: 540.0,
+      CenterY: 960.0
+    },
+    Class: 'com.android.internal.policy.DecorView',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 1794.0,
+      CenterX: 540.0,
+      CenterY: 897.0
+    },
+    Class: 'android.widget.LinearLayout',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 1794.0,
+      CenterX: 540.0,
+      CenterY: 897.0
+    },
+    Class: 'android.widget.FrameLayout',
+    Enabled: true
+  },
+  {
+    Id: 'action_bar_root',
+    Rect: {
+      Width: 1080.0,
+      Height: 1794.0,
+      CenterX: 540.0,
+      CenterY: 897.0
+    },
+    Class: 'android.support.v7.widget.FitWindowsLinearLayout',
+    Enabled: true
+  },
+  {
+    Id: 'content',
+    Rect: {
+      Width: 1080.0,
+      Height: 1794.0,
+      CenterX: 540.0,
+      CenterY: 897.0
+    },
+    Class: 'android.support.v7.widget.ContentFrameLayout',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 1794.0,
+      CenterX: 540.0,
+      CenterY: 897.0
+    },
+    Class: 'android.support.design.widget.CoordinatorLayout',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 147.0,
+      CenterX: 540.0,
+      CenterY: 73.0
+    },
+    Class: 'android.support.design.widget.AppBarLayout',
+    Enabled: true
+  },
+  {
+    Id: 'toolbar',
+    Rect: {
+      Width: 1080.0,
+      Height: 147.0,
+      CenterX: 540.0,
+      CenterY: 73.0
+    },
+    Class: 'android.support.v7.widget.Toolbar',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 379.0,
+      Height: 71.0,
+      X: 42.0,
+      Y: 38.0,
+      CenterX: 231.0,
+      CenterY: 73.0
+    },
+    Text: 'SampleXamarin',
+    Class: 'android.support.v7.widget.AppCompatTextView',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 105.0,
+      Height: 147.0,
+      X: 975.0,
+      CenterX: 1027.0,
+      CenterY: 73.0
+    },
+    Class: 'android.support.v7.widget.ActionMenuView',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 105.0,
+      Height: 126.0,
+      X: 975.0,
+      Y: 10.0,
+      CenterX: 1027.0,
+      CenterY: 73.0
+    },
+    Label: 'More options',
+    Class: 'android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 1080.0,
+      Height: 1647.0,
+      Y: 147.0,
+      CenterX: 540.0,
+      CenterY: 970.0
+    },
+    Class: 'android.widget.RelativeLayout',
+    Enabled: true
+  },
+  {
+    Rect: {
+      Width: 200.0,
+      Height: 51.0,
+      X: 440.0,
+      Y: 945.0,
+      CenterX: 540.0,
+      CenterY: 970.0
+    },
+    Text: 'Hello World!',
+    Class: 'android.support.v7.widget.AppCompatTextView',
+    Enabled: true
+  },
+  {
+    Id: 'fab',
+    Rect: {
+      Width: 147.0,
+      Height: 147.0,
+      X: 891.0,
+      Y: 1605.0,
+      CenterX: 964.0,
+      CenterY: 1678.0
+    },
+    Class: 'android.support.design.widget.FloatingActionButton',
+    Enabled: true
+  },
+  {
+    Id: 'navigationBarBackground',
+    Rect: {
+      Width: 1080.0,
+      Height: 126.0,
+      Y: 1794.0,
+      CenterX: 540.0,
+      CenterY: 1857.0
+    },
+    Class: 'android.view.View',
+    Enabled: true
+  }
+]

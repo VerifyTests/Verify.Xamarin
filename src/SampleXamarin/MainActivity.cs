@@ -15,13 +15,17 @@ namespace SampleXamarin
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            #region hideHeader
+            Window.AddFlags(WindowManagerFlags.Fullscreen);
+            Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+            #endregion
             base.OnCreate(savedInstanceState);
             Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            
+
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
         }

@@ -35,6 +35,15 @@ https://nuget.org/packages/Verify.Uno/
 
 ## Usage
 
+<!-- snippet: hideHeader -->
+<a id='snippet-hideheader'></a>
+```cs
+Window.AddFlags(WindowManagerFlags.Fullscreen);
+Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+```
+<sup><a href='/src/SampleXamarin/MainActivity.cs#L18-L21' title='File snippet `hideheader` was extracted from'>snippet source</a> | <a href='#snippet-hideheader' title='Navigate to start of snippet `hideheader`'>anchor</a></sup>
+<!-- endsnippet -->
+
 
 ### Testing
 

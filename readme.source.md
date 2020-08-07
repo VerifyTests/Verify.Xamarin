@@ -22,6 +22,8 @@ https://nuget.org/packages/Verify.Uno/
 
 ## Usage
 
+snippet: hideHeader
+
 
 ### Testing
 
