@@ -1,8 +1,6 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
@@ -12,6 +10,14 @@ namespace VerifyTests
     {
         static VerifyXamarin()
         {
+            VerifierSettings.ModifySerialization(settings =>
+            {
+                settings.AddExtraSettings(serializerSettings =>
+                {
+                    var converters = serializerSettings.Converters;
+                    converters.Add(new AppResultConverter());
+                });
+            });
         }
 
         public static void Enable()
@@ -23,16 +29,12 @@ namespace VerifyTests
         static ConversionResult AppToImage(IApp target, VerifySettings settings)
         {
             var appResults = target.Query();
-            foreach (var appResult in appResults)
-            {
-                appResult.Description = null;
-            }
+
             var screenshot = target.Screenshot(Guid.NewGuid().ToString());
             if (screenshot == null)
             {
                 throw new Exception("IApp.Screenshot() returned null. It is possible ConfigureApp.Android.EnableLocalScreenshots() was not called.");
             }
-
             var stream = new MemoryStream(File.ReadAllBytes(screenshot.FullName));
             screenshot.Delete();
             return new ConversionResult(
