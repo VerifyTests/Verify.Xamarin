@@ -6,6 +6,6 @@
     <Version>0.1.0</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <PackageTags>Xamarin, Verify</PackageTags>
-    <Description>Extends Verify (https://github.com/VerifyTests/Verify) to allow verification of Xamarin UIs https://dotnet.microsoft.com/apps/xamarin.</Description>
+    <Description>Extends Verify (https://github.com/VerifyTests/Verify) to allow verification of Xamarin UIs https://dotnet.microsoft.com/apps/xamarin</Description>
   </PropertyGroup>
 </Project>
