@@ -84,7 +84,7 @@ snippet: TheTests.ControlUsage.info.verified.txt
 
 [TheTests.ControlUsage.verified.png](/src/Tests/TheTests.ElementControlUsage.verified.png):
 
-<img src="/src/Tests/TheTests.ControlUsage.verified.png" width="400px">
+<img src="/src/Tests/TheTests.ControlUsage.verified.png" width="300px">
 
 
 ## OS specific rendering
