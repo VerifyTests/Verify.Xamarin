@@ -43,6 +43,8 @@ https://nuget.org/packages/Verify.Xamarin/
 
 #### Main content
 
+Given an app with a text control:
+
 <!-- snippet: content_main.xml -->
 <a id='snippet-content_main.xml'></a>
 ```xml
