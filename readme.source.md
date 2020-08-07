@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.Xamarin
 
-[![Build status](https://ci.appveyor.com/api/projects/status/rbkfpdk6o1cc3ih9?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-xamarin)
+[![Build status](https://ci.appveyor.com/api/projects/status/4qpinobb73u233lj?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-xamarin)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.Xamarin.svg)](https://www.nuget.org/packages/Verify.Xamarin/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Xamarin UIs](https://dotnet.microsoft.com/apps/xamarin).
