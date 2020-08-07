@@ -69,7 +69,7 @@ snippet: TheTests.AppUsage.info.verified.txt
 
 [TheTests.AppUsage.verified.png](/src/Tests/TheTests.AppUsage.verified.png):
 
-<img src="/src/Tests/TheTests.AppUsage.verified.png" width="400px">
+<img src="/src/Tests/TheTests.AppUsage.verified.png" width="300px">
 
 
 #### Control test
