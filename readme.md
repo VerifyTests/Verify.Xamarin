@@ -133,7 +133,7 @@ public async Task AppUsage()
 <sup><a href='/src/Tests/TheTests.cs#L28-L36' title='File snippet `appusage` was extracted from'>snippet source</a> | <a href='#snippet-appusage' title='Navigate to start of snippet `appusage`'>anchor</a></sup>
 <!-- endsnippet -->
 
-With the state of the element being rendered as a verified files:
+With the state of the control being rendered as a verified files:
 
 <!-- snippet: TheTests.AppUsage.info.verified.txt -->
 <a id='snippet-TheTests.AppUsage.info.verified.txt'></a>
@@ -218,7 +218,7 @@ With the state of the element being rendered as a verified files:
 <img src="/src/Tests/TheTests.AppUsage.verified.png" width="400px">
 
 
-#### Element test
+#### Control test
 
 An element can be verified as follows:
 
@@ -237,7 +237,7 @@ public async Task ControlUsage()
 <sup><a href='/src/Tests/TheTests.cs#L15-L26' title='File snippet `controlusage` was extracted from'>snippet source</a> | <a href='#snippet-controlusage' title='Navigate to start of snippet `controlusage`'>anchor</a></sup>
 <!-- endsnippet -->
 
-With the state of the element being rendered as a verified files:
+With the state of the control being rendered as a verified files:
 
 <!-- snippet: TheTests.ControlUsage.info.verified.txt -->
 <a id='snippet-TheTests.ControlUsage.info.verified.txt'></a>
