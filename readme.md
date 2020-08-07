@@ -10,7 +10,7 @@ To change this file edit the source file and then run MarkdownSnippets.
 [![Build status](https://ci.appveyor.com/api/projects/status/rbkfpdk6o1cc3ih9?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-xamarin)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.Xamarin.svg)](https://www.nuget.org/packages/Verify.Xamarin/)
 
-Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Uno UIs](https://platform.uno/).
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Xamarin UIs](https://dotnet.microsoft.com/apps/xamarin).
 
 
 Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
@@ -31,7 +31,7 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
 
 ## NuGet package
 
-https://nuget.org/packages/Verify.Uno/
+https://nuget.org/packages/Verify.Xamarin/
 
 
 ## Usage
