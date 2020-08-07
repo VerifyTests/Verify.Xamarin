@@ -74,7 +74,7 @@ snippet: TheTests.AppUsage.info.verified.txt
 
 #### Control test
 
-An element can be verified as follows:
+A control can be verified as follows:
 
 snippet: ControlUsage
 

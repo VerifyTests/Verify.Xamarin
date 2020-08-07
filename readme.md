@@ -223,7 +223,7 @@ With the state of the control being rendered as:
 
 #### Control test
 
-An element can be verified as follows:
+A control can be verified as follows:
 
 <!-- snippet: ControlUsage -->
 <a id='snippet-controlusage'></a>
