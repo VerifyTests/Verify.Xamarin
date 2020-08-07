@@ -1,45 +1,49 @@
-﻿//using System;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using VerifyTests;
-//using VerifyNUnit;
-//using NUnit.Framework;
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using VerifyTests;
+using VerifyNUnit;
+using NUnit.Framework;
+using Xamarin.UITest;
+using Xamarin.UITest.Android;
+using Xamarin.UITest.iOS;
 
-//[TestFixture]
-//public class TheTests :
-//    IDisposable
-//{
-//    #region ElementUsage
-//    [Test]
-//    public async Task ElementUsage()
-//    {
-//        var element = app.WaitForElement(query => query.Marked("second"))!;
-//        await Verifier.Verify(element.Single());
-//    }
-//    #endregion
+[TestFixture]
+public class TheTests
+{
+    AndroidApp app;
 
-//    public TheTests()
-//    {
-//        #region UnoAppSetup
-//        var environment = AppInitializer.TestEnvironment;
-//        environment.WebAssemblyDefaultUri = "http://localhost:57416";
-//        environment.CurrentPlatform = Platform.Browser;
+    #region ElementUsage
+    [Test]
+    public async Task ElementUsage()
+    {
+        var element = app.WaitForElement(query => query.Marked("second"))!;
+        await Verifier.Verify(element.Single());
+    }
+    #endregion
 
-//        app = AppInitializer.AttachToApp();
-//        #endregion
-//    }
+    public TheTests()
+    {
+        var directory = AppDomain.CurrentDomain.BaseDirectory;
+        var apkPath = Path.GetFullPath(Path.Combine(directory, "../../../../SampleXamarin/bin/Debug/SampleXamarin.SampleXamarin.apk"));
 
-//    static TheTests()
-//    {
-//        #region Enable
-//        VerifyUno.Enable();
-//        #endregion
-//        VerifierSettings.UniqueForRuntime();
-//        VerifyPhash.RegisterComparer("png", .99f);
-//    }
+        #region AppSetup
 
-//    public void Dispose()
-//    {
-//        app.Dispose();
-//    }
-//}
+        app = ConfigureApp
+            .Android
+            .ApkFile(apkPath)
+            .StartApp();
+
+        #endregion
+    }
+
+    static TheTests()
+    {
+        #region Enable
+        VerifyXamarin.Enable();
+        #endregion
+        VerifierSettings.UniqueForRuntime();
+        VerifyPhash.RegisterComparer("png", .99f);
+    }
+}
