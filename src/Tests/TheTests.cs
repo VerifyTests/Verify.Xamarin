@@ -15,12 +15,24 @@ public class TheTests
     AndroidApp app;
 
     #region ElementUsage
+
     [Test]
     public async Task ElementUsage()
     {
         var element = app.WaitForElement(query => query.Marked("second"))!;
         await Verifier.Verify(element.Single());
     }
+
+    #endregion
+
+    #region AppUsage
+
+    [Test]
+    public async Task AppUsage()
+    {
+        await Verifier.Verify(app);
+    }
+
     #endregion
 
     public TheTests()
@@ -32,6 +44,7 @@ public class TheTests
 
         app = ConfigureApp
             .Android
+            .EnableLocalScreenshots()
             .ApkFile(apkPath)
             .StartApp();
 
@@ -41,8 +54,11 @@ public class TheTests
     static TheTests()
     {
         #region Enable
+
         VerifyXamarin.Enable();
+
         #endregion
+
         VerifierSettings.UniqueForRuntime();
         VerifyPhash.RegisterComparer("png", .99f);
     }
