@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/rbkfpdk6o1cc3ih9?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-xamarin)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.Xamarin.svg)](https://www.nuget.org/packages/Verify.Xamarin/)
 
-Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Uno UIs](https://platform.uno/).
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [Xamarin UIs](https://dotnet.microsoft.com/apps/xamarin).
 
 
 Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
@@ -17,17 +17,71 @@ toc
 
 ## NuGet package
 
-https://nuget.org/packages/Verify.Uno/
+https://nuget.org/packages/Verify.Xamarin/
 
 
 ## Usage
 
-snippet: hideHeader
+
+### App
+
+
+#### Main content
+
+snippet: content_main.xml
+
+
+#### Make Fullscreen
+
+To prevent the tool bar header (that contains a clock) from making the snapshots unreliable, it is necessary to make the app full screen when running tests.
+
+Add the following to the main activity:
+
+snippet: makeFullscreen
 
 
 ### Testing
 
-Enable VerifyUno once at assembly load time:
+
+#### Setup
+
+Enable VerifyXamarin once at assembly load time:
+
+snippet: Enable
+
+Setup the app
+
+snippet: AppSetup
+
+
+#### App test
+
+The current app state can then be verified as follows:
+
+snippet: AppUsage
+
+With the state of the element being rendered as a verified files:
+
+/snippet: TheTests.AppUsage.00.verified.html
+
+[TheTests.AppUsage.01.verified.png](/src/Tests/TheTests.AppUsage.01.verified.png):
+
+<img src="/src/Tests/TheTests.AppUsage.01.verified.png" width="400px">
+
+
+#### Element test
+
+An element can be verified as follows:
+
+snippet: ControlUsage
+
+With the state of the element being rendered as a verified files:
+
+/snippet: TheTests.ControlUsage.00.verified.html
+
+[TheTests.ControlUsage.01.verified.png](/src/Tests/TheTests.ElementControlUsage.01.verified.png):
+
+<img src="/src/Tests/TheTests.ControlUsage.01.verified.png" width="400px">
 
 
 ## OS specific rendering
@@ -44,4 +98,4 @@ To report a security vulnerability, use the [Tidelift security contact](https://
 
 ## Icon
 
-[Gem](https://thenounproject.com/term/gem/2247823/) designed by [Adnen Kadri](https://thenounproject.com/adnen.kadri/) from [The Noun Project](https://thenounproject.com/creativepriyanka).
+[Monkey](https://thenounproject.com/term/monkey/2006781/) designed by [Maxim Kulikov](https://thenounproject.com/maxim221/) from [The Noun Project](https://thenounproject.com).

@@ -6,21 +6,21 @@ using VerifyTests;
 using VerifyNUnit;
 using NUnit.Framework;
 using Xamarin.UITest;
-using Xamarin.UITest.Android;
-using Xamarin.UITest.iOS;
 
 [TestFixture]
 public class TheTests
 {
-    AndroidApp app;
+    IApp app;
 
-    #region ElementUsage
+    #region ControlUsage
 
     [Test]
-    public async Task ElementUsage()
+    public async Task ControlUsage()
     {
-        var element = app.WaitForElement(query => query.Marked("second"))!;
-        await Verifier.Verify(element.Single());
+        var appResult = app.Query(x => x.Id("theText"))
+            .Single();
+        var data = new ControlData(app, appResult);
+        await Verifier.Verify(data);
     }
 
     #endregion
@@ -59,7 +59,6 @@ public class TheTests
 
         #endregion
 
-        VerifierSettings.UniqueForRuntime();
         VerifyPhash.RegisterComparer("png", .9f);
     }
 }

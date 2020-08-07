@@ -23,6 +23,7 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
 ## Contents
 
   * [Usage](#usage)
+    * [App](#app)
     * [Testing](#testing)
   * [OS specific rendering](#os-specific-rendering)
   * [Security contact information](#security-contact-information)<!-- endtoc -->
@@ -35,19 +36,138 @@ https://nuget.org/packages/Verify.Uno/
 
 ## Usage
 
-<!-- snippet: hideHeader -->
-<a id='snippet-hideheader'></a>
-```cs
-Window.AddFlags(WindowManagerFlags.Fullscreen);
-Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+
+### App
+
+
+#### Main content
+
+<!-- snippet: content_main.xml -->
+<a id='snippet-content_main.xml'></a>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/theText"
+        android:text="Hello World!" />
+
+</RelativeLayout>
 ```
-<sup><a href='/src/SampleXamarin/MainActivity.cs#L18-L21' title='File snippet `hideheader` was extracted from'>snippet source</a> | <a href='#snippet-hideheader' title='Navigate to start of snippet `hideheader`'>anchor</a></sup>
+<sup><a href='/src/SampleXamarin/Resources/layout/content_main.xml#L1-L17' title='File snippet `content_main.xml` was extracted from'>snippet source</a> | <a href='#snippet-content_main.xml' title='Navigate to start of snippet `content_main.xml`'>anchor</a></sup>
+<!-- endsnippet -->
+
+
+#### Make Fullscreen
+
+To prevent the tool bar header (that contains a clock) from making the snapshots unreliable, it is necessary to make the app full screen when running tests.
+
+Add the following to the main activity:
+
+<!-- snippet: makeFullscreen -->
+<a id='snippet-makefullscreen'></a>
+```cs
+protected override void OnCreate(Bundle savedInstanceState)
+{
+#if DEBUG
+    Window.AddFlags(WindowManagerFlags.Fullscreen);
+    Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+#endif
+```
+<sup><a href='/src/SampleXamarin/MainActivity.cs#L16-L23' title='File snippet `makefullscreen` was extracted from'>snippet source</a> | <a href='#snippet-makefullscreen' title='Navigate to start of snippet `makefullscreen`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
 ### Testing
 
-Enable VerifyUno once at assembly load time:
+
+#### Setup
+
+Enable VerifyXamarin once at assembly load time:
+
+<!-- snippet: Enable -->
+<a id='snippet-enable'></a>
+```cs
+VerifyXamarin.Enable();
+```
+<sup><a href='/src/Tests/TheTests.cs#L56-L60' title='File snippet `enable` was extracted from'>snippet source</a> | <a href='#snippet-enable' title='Navigate to start of snippet `enable`'>anchor</a></sup>
+<!-- endsnippet -->
+
+Setup the app
+
+<!-- snippet: AppSetup -->
+<a id='snippet-appsetup'></a>
+```cs
+app = ConfigureApp
+    .Android
+    .EnableLocalScreenshots()
+    .ApkFile(apkPath)
+    .StartApp();
+```
+<sup><a href='/src/Tests/TheTests.cs#L43-L51' title='File snippet `appsetup` was extracted from'>snippet source</a> | <a href='#snippet-appsetup' title='Navigate to start of snippet `appsetup`'>anchor</a></sup>
+<!-- endsnippet -->
+
+
+#### App test
+
+The current app state can then be verified as follows:
+
+<!-- snippet: AppUsage -->
+<a id='snippet-appusage'></a>
+```cs
+[Test]
+public async Task AppUsage()
+{
+    await Verifier.Verify(app);
+}
+```
+<sup><a href='/src/Tests/TheTests.cs#L28-L36' title='File snippet `appusage` was extracted from'>snippet source</a> | <a href='#snippet-appusage' title='Navigate to start of snippet `appusage`'>anchor</a></sup>
+<!-- endsnippet -->
+
+With the state of the element being rendered as a verified files:
+
+/snippet: TheTests.AppUsage.00.verified.html
+
+[TheTests.AppUsage.01.verified.png](/src/Tests/TheTests.AppUsage.01.verified.png):
+
+<img src="/src/Tests/TheTests.AppUsage.01.verified.png" width="400px">
+
+
+#### Element test
+
+An element can be verified as follows:
+
+<!-- snippet: ControlUsage -->
+<a id='snippet-controlusage'></a>
+```cs
+[Test]
+public async Task ControlUsage()
+{
+    var appResult = app.Query(x => x.Id("theText"))
+        .Single();
+    var data = new ControlData(app, appResult);
+    await Verifier.Verify(data);
+}
+```
+<sup><a href='/src/Tests/TheTests.cs#L15-L26' title='File snippet `controlusage` was extracted from'>snippet source</a> | <a href='#snippet-controlusage' title='Navigate to start of snippet `controlusage`'>anchor</a></sup>
+<!-- endsnippet -->
+
+With the state of the element being rendered as a verified files:
+
+/snippet: TheTests.ControlUsage.00.verified.html
+
+[TheTests.ControlUsage.01.verified.png](/src/Tests/TheTests.ElementControlUsage.01.verified.png):
+
+<img src="/src/Tests/TheTests.ControlUsage.01.verified.png" width="400px">
 
 
 ## OS specific rendering
@@ -64,4 +184,4 @@ To report a security vulnerability, use the [Tidelift security contact](https://
 
 ## Icon
 
-[Gem](https://thenounproject.com/term/gem/2247823/) designed by [Adnen Kadri](https://thenounproject.com/adnen.kadri/) from [The Noun Project](https://thenounproject.com/creativepriyanka).
+[Monkey](https://thenounproject.com/term/monkey/2006781/) designed by [Maxim Kulikov](https://thenounproject.com/maxim221/) from [The Noun Project](https://thenounproject.com).

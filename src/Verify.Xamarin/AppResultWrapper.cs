@@ -1,6 +1,4 @@
-﻿using Xamarin.UITest.Queries;
-
-class AppResultWrapper
+﻿struct AppResultWrapper
 {
     public string Id { get; }
     public string Label { get; }

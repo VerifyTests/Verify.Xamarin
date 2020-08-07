@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using Xamarin.UITest;
-using Xamarin.UITest.Queries;
 
 namespace VerifyTests
 {
@@ -23,31 +21,32 @@ namespace VerifyTests
         public static void Enable()
         {
             VerifierSettings.RegisterFileConverter<IApp>(AppToImage);
-            VerifierSettings.RegisterFileConverter<AppResult>(AppResultToImage);
+            VerifierSettings.RegisterFileConverter<ControlData>(AppResultToImage);
         }
 
         static ConversionResult AppToImage(IApp target, VerifySettings settings)
         {
             var appResults = target.Query();
 
-            var screenshot = target.Screenshot(Guid.NewGuid().ToString());
-            if (screenshot == null)
-            {
-                throw new Exception("IApp.Screenshot() returned null. It is possible ConfigureApp.Android.EnableLocalScreenshots() was not called.");
-            }
-            var stream = new MemoryStream(File.ReadAllBytes(screenshot.FullName));
-            screenshot.Delete();
+            var screenshot = target.TakeScreenshot();
             return new ConversionResult(
                 appResults,
                 new List<ConversionStream>
                 {
-                    new ConversionStream("png", stream)
+                    new ConversionStream("png", screenshot)
                 });
         }
 
-        private static ConversionResult AppResultToImage(AppResult target, VerifySettings settings)
+        static ConversionResult AppResultToImage(ControlData target, VerifySettings settings)
         {
-            throw new System.NotImplementedException();
+            var result = target.Result;
+            var screenshot = target.App.TakeScreenshot(result);
+            return new ConversionResult(
+                result,
+                new List<ConversionStream>
+                {
+                    new ConversionStream("png", screenshot)
+                });
         }
     }
 }

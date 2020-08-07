@@ -13,11 +13,13 @@ namespace SampleXamarin
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        #region makeFullscreen
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            #region hideHeader
+#if DEBUG
             Window.AddFlags(WindowManagerFlags.Fullscreen);
             Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+#endif
             #endregion
             base.OnCreate(savedInstanceState);
             Platform.Init(this, savedInstanceState);

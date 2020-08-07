@@ -53,6 +53,7 @@
     Rect: 'w:1080 h:1647 x:0 y:147'
   },
   {
+    Id: 'theText',
     Text: 'Hello World!',
     Class: 'AppCompatTextView',
     Rect: 'w:200 h:51 x:440 y:945'
