@@ -67,8 +67,6 @@ With the state of the control being rendered as:
 
 snippet: TheTests.AppUsage.info.verified.txt
 
-[TheTests.AppUsage.verified.png](/src/Tests/TheTests.AppUsage.verified.png):
-
 <img src="/src/Tests/TheTests.AppUsage.verified.png" width="300px">
 
 
@@ -81,8 +79,6 @@ snippet: ControlUsage
 With the state of the control being rendered as:
 
 snippet: TheTests.ControlUsage.info.verified.txt
-
-[TheTests.ControlUsage.verified.png](/src/Tests/TheTests.ElementControlUsage.verified.png):
 
 <img src="/src/Tests/TheTests.ControlUsage.verified.png" width="300px">
 

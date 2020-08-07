@@ -216,8 +216,6 @@ With the state of the control being rendered as:
 <sup><a href='/src/Tests/TheTests.AppUsage.info.verified.txt#L1-L71' title='File snippet `TheTests.AppUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.AppUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.AppUsage.info.verified.txt`'>anchor</a></sup>
 <!-- endsnippet -->
 
-[TheTests.AppUsage.verified.png](/src/Tests/TheTests.AppUsage.verified.png):
-
 <img src="/src/Tests/TheTests.AppUsage.verified.png" width="300px">
 
 
@@ -254,8 +252,6 @@ With the state of the control being rendered as:
 ```
 <sup><a href='/src/Tests/TheTests.ControlUsage.info.verified.txt#L1-L6' title='File snippet `TheTests.ControlUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.ControlUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.ControlUsage.info.verified.txt`'>anchor</a></sup>
 <!-- endsnippet -->
-
-[TheTests.ControlUsage.verified.png](/src/Tests/TheTests.ElementControlUsage.verified.png):
 
 <img src="/src/Tests/TheTests.ControlUsage.verified.png" width="300px">
 
