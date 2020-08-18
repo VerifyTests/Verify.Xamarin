@@ -27,7 +27,7 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
     * [App](#app)
     * [Testing](#testing)
   * [OS specific rendering](#os-specific-rendering)
-  * [Security contact information](#security-contact-information)<!-- endtoc -->
+  * [Security contact information](#security-contact-information)<!-- endToc -->
 
 
 ## NuGet package
@@ -67,7 +67,7 @@ Given an app with a text control:
 </RelativeLayout>
 ```
 <sup><a href='/src/SampleXamarin/Resources/layout/content_main.xml#L1-L17' title='File snippet `content_main.xml` was extracted from'>snippet source</a> | <a href='#snippet-content_main.xml' title='Navigate to start of snippet `content_main.xml`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 #### Make Fullscreen
@@ -87,7 +87,7 @@ protected override void OnCreate(Bundle bundle)
 #endif
 ```
 <sup><a href='/src/SampleXamarin/MainActivity.cs#L16-L23' title='File snippet `makefullscreen` was extracted from'>snippet source</a> | <a href='#snippet-makefullscreen' title='Navigate to start of snippet `makefullscreen`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 ### Testing
@@ -103,7 +103,7 @@ Enable VerifyXamarin once at assembly load time:
 VerifyXamarin.Enable();
 ```
 <sup><a href='/src/Tests/TheTests.cs#L56-L60' title='File snippet `enable` was extracted from'>snippet source</a> | <a href='#snippet-enable' title='Navigate to start of snippet `enable`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 Setup the app
 
@@ -117,7 +117,7 @@ app = ConfigureApp
     .StartApp();
 ```
 <sup><a href='/src/Tests/TheTests.cs#L43-L51' title='File snippet `appsetup` was extracted from'>snippet source</a> | <a href='#snippet-appsetup' title='Navigate to start of snippet `appsetup`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 #### App test
@@ -134,7 +134,7 @@ public async Task AppUsage()
 }
 ```
 <sup><a href='/src/Tests/TheTests.cs#L28-L36' title='File snippet `appusage` was extracted from'>snippet source</a> | <a href='#snippet-appusage' title='Navigate to start of snippet `appusage`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 With the state of the control being rendered as:
 
@@ -214,7 +214,7 @@ With the state of the control being rendered as:
 ]
 ```
 <sup><a href='/src/Tests/TheTests.AppUsage.info.verified.txt#L1-L71' title='File snippet `TheTests.AppUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.AppUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.AppUsage.info.verified.txt`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 <img src="/src/Tests/TheTests.AppUsage.verified.png" width="300px">
 
@@ -236,7 +236,7 @@ public async Task ControlUsage()
 }
 ```
 <sup><a href='/src/Tests/TheTests.cs#L15-L26' title='File snippet `controlusage` was extracted from'>snippet source</a> | <a href='#snippet-controlusage' title='Navigate to start of snippet `controlusage`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 With the state of the control being rendered as:
 
@@ -251,7 +251,7 @@ With the state of the control being rendered as:
 }
 ```
 <sup><a href='/src/Tests/TheTests.ControlUsage.info.verified.txt#L1-L6' title='File snippet `TheTests.ControlUsage.info.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-TheTests.ControlUsage.info.verified.txt' title='Navigate to start of snippet `TheTests.ControlUsage.info.verified.txt`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 <img src="/src/Tests/TheTests.ControlUsage.verified.png" width="300px">
 
