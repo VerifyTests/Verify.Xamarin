@@ -46,7 +46,7 @@ https://nuget.org/packages/Verify.Xamarin/
 Given an app with a text control:
 
 <!-- snippet: content_main.xml -->
-<a id='eb56585a'></a>
+<a id='snippet-content_main.xml'></a>
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -66,7 +66,7 @@ Given an app with a text control:
 
 </RelativeLayout>
 ```
-<sup><a href='/src/SampleXamarin/Resources/layout/content_main.xml#L1-L17' title='Snippet source file'>snippet source</a> | <a href='#eb56585a' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/SampleXamarin/Resources/layout/content_main.xml#L1-L17' title='Snippet source file'>snippet source</a> | <a href='#snippet-content_main.xml' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -77,7 +77,7 @@ To prevent the tool bar header (that contains a clock) from making the snapshots
 Add the following to the main activity:
 
 <!-- snippet: makeFullscreen -->
-<a id='1a03920e'></a>
+<a id='snippet-makefullscreen'></a>
 ```cs
 protected override void OnCreate(Bundle bundle)
 {
@@ -86,7 +86,7 @@ protected override void OnCreate(Bundle bundle)
     Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
 #endif
 ```
-<sup><a href='/src/SampleXamarin/MainActivity.cs#L16-L23' title='Snippet source file'>snippet source</a> | <a href='#1a03920e' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/SampleXamarin/MainActivity.cs#L16-L23' title='Snippet source file'>snippet source</a> | <a href='#snippet-makefullscreen' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -98,17 +98,17 @@ protected override void OnCreate(Bundle bundle)
 Enable VerifyXamarin once at assembly load time:
 
 <!-- snippet: Enable -->
-<a id='9905c339'></a>
+<a id='snippet-enable'></a>
 ```cs
 VerifyXamarin.Enable();
 ```
-<sup><a href='/src/Tests/TheTests.cs#L56-L60' title='Snippet source file'>snippet source</a> | <a href='#9905c339' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.cs#L56-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Setup the app
 
 <!-- snippet: AppSetup -->
-<a id='54bd7df5'></a>
+<a id='snippet-appsetup'></a>
 ```cs
 app = ConfigureApp
     .Android
@@ -116,7 +116,7 @@ app = ConfigureApp
     .ApkFile(apkPath)
     .StartApp();
 ```
-<sup><a href='/src/Tests/TheTests.cs#L43-L51' title='Snippet source file'>snippet source</a> | <a href='#54bd7df5' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.cs#L43-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-appsetup' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -125,7 +125,7 @@ app = ConfigureApp
 The current app state can then be verified as follows:
 
 <!-- snippet: AppUsage -->
-<a id='a0ed55de'></a>
+<a id='snippet-appusage'></a>
 ```cs
 [Test]
 public async Task AppUsage()
@@ -133,13 +133,13 @@ public async Task AppUsage()
     await Verifier.Verify(app);
 }
 ```
-<sup><a href='/src/Tests/TheTests.cs#L28-L36' title='Snippet source file'>snippet source</a> | <a href='#a0ed55de' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.cs#L28-L36' title='Snippet source file'>snippet source</a> | <a href='#snippet-appusage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 With the state of the control being rendered as:
 
 <!-- snippet: TheTests.AppUsage.info.verified.txt -->
-<a id='78648f1c'></a>
+<a id='snippet-TheTests.AppUsage.info.verified.txt'></a>
 ```txt
 [
   {
@@ -213,7 +213,7 @@ With the state of the control being rendered as:
   }
 ]
 ```
-<sup><a href='/src/Tests/TheTests.AppUsage.info.verified.txt#L1-L71' title='Snippet source file'>snippet source</a> | <a href='#78648f1c' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.AppUsage.info.verified.txt#L1-L71' title='Snippet source file'>snippet source</a> | <a href='#snippet-TheTests.AppUsage.info.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 <img src="/src/Tests/TheTests.AppUsage.verified.png" width="300px">
@@ -224,7 +224,7 @@ With the state of the control being rendered as:
 A control can be verified as follows:
 
 <!-- snippet: ControlUsage -->
-<a id='2df82b4b'></a>
+<a id='snippet-controlusage'></a>
 ```cs
 [Test]
 public async Task ControlUsage()
@@ -235,13 +235,13 @@ public async Task ControlUsage()
     await Verifier.Verify(data);
 }
 ```
-<sup><a href='/src/Tests/TheTests.cs#L15-L26' title='Snippet source file'>snippet source</a> | <a href='#2df82b4b' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.cs#L15-L26' title='Snippet source file'>snippet source</a> | <a href='#snippet-controlusage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 With the state of the control being rendered as:
 
 <!-- snippet: TheTests.ControlUsage.info.verified.txt -->
-<a id='e0e947da'></a>
+<a id='snippet-TheTests.ControlUsage.info.verified.txt'></a>
 ```txt
 {
   Id: 'theText',
@@ -250,7 +250,7 @@ With the state of the control being rendered as:
   Rect: 'w:200 h:51 x:440 y:945'
 }
 ```
-<sup><a href='/src/Tests/TheTests.ControlUsage.info.verified.txt#L1-L6' title='Snippet source file'>snippet source</a> | <a href='#e0e947da' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/TheTests.ControlUsage.info.verified.txt#L1-L6' title='Snippet source file'>snippet source</a> | <a href='#snippet-TheTests.ControlUsage.info.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 <img src="/src/Tests/TheTests.ControlUsage.verified.png" width="300px">
