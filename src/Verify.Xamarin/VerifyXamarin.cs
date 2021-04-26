@@ -24,28 +24,28 @@ namespace VerifyTests
             VerifierSettings.RegisterFileConverter<ControlData>(AppResultToImage);
         }
 
-        static ConversionResult AppToImage(IApp target, VerifySettings settings)
+        static ConversionResult AppToImage(IApp target, IReadOnlyDictionary<string, object> context)
         {
             var appResults = target.Query();
 
             var screenshot = target.TakeScreenshot();
             return new ConversionResult(
                 appResults,
-                new List<ConversionStream>
+                new List<Target>
                 {
-                    new ConversionStream("png", screenshot)
+                    new Target("png", screenshot)
                 });
         }
 
-        static ConversionResult AppResultToImage(ControlData target, VerifySettings settings)
+        static ConversionResult AppResultToImage(ControlData target, IReadOnlyDictionary<string, object> context)
         {
             var result = target.Result;
             var screenshot = target.App.TakeScreenshot(result);
             return new ConversionResult(
                 result,
-                new List<ConversionStream>
+                new List<Target>
                 {
-                    new ConversionStream("png", screenshot)
+                    new Target("png", screenshot)
                 });
         }
     }
