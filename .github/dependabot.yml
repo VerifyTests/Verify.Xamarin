@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Verify
+    versions:
+    - 11.5.0
+    - 11.7.0
+    - 11.8.0
+  - dependency-name: Xamarin.UITest
+    versions:
+    - 3.0.16
+    - 3.0.17
+  - dependency-name: Verify.NUnit
+    versions:
+    - 11.7.0
