@@ -7,20 +7,8 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 
 Leverages [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/frameworks/uitest/) to capture the state of an app.
 
-Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
-
-
 <a href='https://dotnetfoundation.org' alt='Part of the .NET Foundation'><img src='https://raw.githubusercontent.com/VerifyTests/Verify/master/docs/dotNetFoundation.svg' height='30px'></a><br>
 Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
-
-<!-- toc -->
-## Contents
-
-  * [Usage](#usage)
-    * [App](#app)
-    * [Testing](#testing)
-  * [OS specific rendering](#os-specific-rendering)
-  * [Security contact information](#security-contact-information)<!-- endToc -->
 
 
 ## NuGet package
@@ -255,10 +243,6 @@ The rendering of Form elements can very slightly between different OS versions. 
 
  * Using a [custom comparer](https://github.com/VerifyTests/Verify/blob/master/docs/comparer.md)
 
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
