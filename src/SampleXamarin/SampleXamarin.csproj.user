@@ -5,5 +5,6 @@
     <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <ActiveDebugProfile>pixel_2_pie_9_0_-_api_28</ActiveDebugProfile>
   </PropertyGroup>
 </Project>
