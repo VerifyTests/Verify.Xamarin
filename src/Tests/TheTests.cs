@@ -20,7 +20,7 @@ public class TheTests
         var appResult = app.Query(x => x.Id("theText"))
             .Single();
         var data = new ControlData(app, appResult);
-        await Verifier.Verify(data);
+        await Verify(data);
     }
 
     #endregion
@@ -30,7 +30,7 @@ public class TheTests
     [Test]
     public async Task AppUsage()
     {
-        await Verifier.Verify(app);
+        await Verify(app);
     }
 
     #endregion
