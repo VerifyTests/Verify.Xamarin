@@ -111,7 +111,7 @@ The current app state can then be verified as follows:
 [Test]
 public async Task AppUsage()
 {
-    await Verifier.Verify(app);
+    await Verify(app);
 }
 ```
 <sup><a href='/src/Tests/TheTests.cs#L28-L36' title='Snippet source file'>snippet source</a> | <a href='#snippet-appusage' title='Start of snippet'>anchor</a></sup>
@@ -213,7 +213,7 @@ public async Task ControlUsage()
     var appResult = app.Query(x => x.Id("theText"))
         .Single();
     var data = new ControlData(app, appResult);
-    await Verifier.Verify(data);
+    await Verify(data);
 }
 ```
 <sup><a href='/src/Tests/TheTests.cs#L15-L26' title='Snippet source file'>snippet source</a> | <a href='#snippet-controlusage' title='Start of snippet'>anchor</a></sup>
