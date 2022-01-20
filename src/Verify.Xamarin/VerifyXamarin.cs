@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Xamarin.UITest;
+﻿using Xamarin.UITest;
 
 namespace VerifyTests
 {

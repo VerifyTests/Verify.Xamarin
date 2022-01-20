@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
-using VerifyTests;
+﻿using Newtonsoft.Json;
 using Xamarin.UITest.Queries;
 
 class AppResultConverter :
     WriteOnlyJsonConverter<AppResult>
 {
-    public override void WriteJson(JsonWriter writer, AppResult result, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, AppResult result, JsonSerializer serializer)
     {
         var rect = result.Rect;
         var rectString = $"w:{rect.Width} h:{rect.Height} x:{rect.X} y:{rect.Y}";
