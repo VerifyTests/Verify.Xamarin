@@ -7,8 +7,6 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 
 Leverages [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/frameworks/uitest/) to capture the state of an app.
 
-<a href='https://dotnetfoundation.org' alt='Part of the .NET Foundation'><img src='https://raw.githubusercontent.com/VerifyTests/Verify/master/docs/dotNetFoundation.svg' height='30px'></a><br>
-Part of the [.NET Foundation](https://dotnetfoundation.org)
 
 
 ## NuGet package
