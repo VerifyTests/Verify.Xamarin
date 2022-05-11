@@ -31,7 +31,7 @@ namespace VerifyTests
                 appResults,
                 new List<Target>
                 {
-                    new Target("png", screenshot)
+                    new Target("png", screenshot, null)
                 });
         }
 
@@ -43,7 +43,7 @@ namespace VerifyTests
                 result,
                 new List<Target>
                 {
-                    new Target("png", screenshot)
+                    new Target("png", screenshot, null)
                 });
         }
     }
