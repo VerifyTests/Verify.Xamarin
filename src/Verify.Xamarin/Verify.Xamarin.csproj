@@ -1,4 +1,4 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
   <PropertyGroup>
     <TargetFrameworks>net48</TargetFrameworks>
     <SignAssembly>false</SignAssembly>
@@ -8,6 +8,6 @@
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
     <PackageReference Include="ProjectDefaults" Version="1.0.78" PrivateAssets="all" />
-    <PackageReference Include="Xamarin.UITest" Version="3.2.8" />
+    <PackageReference Include="Xamarin.UITest" Version="4.1.2" />
   </ItemGroup>
 </Project>
